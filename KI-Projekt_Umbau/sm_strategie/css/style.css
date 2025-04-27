@@ -1,0 +1,481 @@
+/* --- Style.css --- */
+
+/* Schriftart einbinden */
+
+/* Allgemeine Stile */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 3vh;
+    background: linear-gradient(135deg, #162d6ca9, #080e4a);
+    color: white;
+    line-height: 1.6;
+    padding: 2vh;
+}
+
+/* Header */
+header {
+    text-align: left;
+    padding: 4vh;
+    border-radius: 1vh;
+    margin-bottom: 8vh;
+    width: 84%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header .logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+header h1 {
+    margin: 2vh 0;
+    font-size: 5vh;
+    color: #fff;
+}
+
+header .highlight {
+    color: #60b22c;
+}
+
+header p {
+    font-size: 2vh;
+    color: #ecf0f1;
+}
+
+/* Hauptinhalt */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vh;
+}
+
+/* Einleitungsbereich */
+#introSection {
+    background-color: #ffffff;
+    color: #333;
+    padding: 6vh;
+    border-radius: 2vh;
+    width: 90%;
+    max-width: 70%;
+    box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#introSection .intro-text {
+    font-size: 2.5vh;
+    line-height: 1.8;
+    margin-bottom: 4vh;
+}
+
+#introSection button {
+    padding: 1.5vh 3vh;
+    background-color: #60b22c;
+    color: #ffffff;
+    border: none;
+    border-radius: 1vh;
+    font-size: 2.5vh;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#introSection button:hover {
+    background-color: #4e8e22;
+}
+
+#introSection button:focus {
+    outline: none;
+    box-shadow: 0 0 1vh #4e8e22;
+}
+
+/* Fragenbereich */
+.question-wrapper {
+    background-color: #fff;
+    color: #333;
+    padding: 8vh;
+    border-radius: 2vh;
+    width: 90%;
+    max-width: 80%;
+    box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: center;
+}
+
+/* Frage und Antwortmöglichkeiten */
+.question-container {
+    width: 100%;
+    flex-direction: column;
+    text-align: left;
+    display: none;
+}
+
+.question-container:first-of-type {
+    display: flex;
+}
+
+.question-container.active {
+    display: block;
+}
+
+.question-container h2 {
+    font-weight: normal;
+    font-size: 3vh;
+    margin-bottom: 2vh;
+}
+
+.question-container p {
+    font-size: 3vh;
+    font-weight: normal;
+    color: #333;
+    margin-bottom: 7vh;
+    margin-top: 3vh;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.question-container label {
+    font-size: 2vh;
+    font-weight: normal;
+    color: #333;
+    margin-bottom: 1vh;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.options {
+    width: 100%;
+    padding-left: 2vh;
+}
+
+.options label {
+    font-size: 2vh;
+    font-weight: normal;
+    color: #333;
+    cursor: pointer;
+    margin-bottom: 1vh;
+}
+
+.options input[type="checkbox"] {
+    margin-right: 2vh;
+}
+
+/* Navigationsbuttons */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3vh;
+    gap: 2vh;
+}
+
+button {
+    padding: 2vh 3vh;
+    border: 1vh solid #60b22c;
+    border-radius: 1vh;
+    cursor: pointer;
+    font-size: 3vh;
+    font-weight: bold;
+    background-color: #60b22c;
+    color: #ecf0f1;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+button#prevButton {
+    background-color: #60b22c;
+    color: #ffffff;
+}
+
+button#nextButton {
+    background-color: #60b22c;
+    color: #ffffff;
+}
+
+button:disabled {
+    background-color: #60b22c;
+    cursor: not-allowed;
+}
+
+/* Antwortbereich */
+.response-wrapper {
+    background-color: #ffffff;
+    color: #333;
+    padding: 4vh;
+    border-radius: 2vh;
+    width: 90%;
+    max-width: 80%;
+    box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-size: 2.5vh;
+    line-height: 1.6;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    overflow: auto;
+    max-height: 50vh;
+}
+
+/* Stil für die Antwortbox */
+.response-box {
+    background-color: #f9f9f9;
+    border-left: 5px solid #60b22c;
+    padding: 2vh;
+    border-radius: 1vh;
+    box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.1);
+    font-size: 2.5vh;
+    color: #222;
+}
+
+/* Fehlertexte */
+.error-text {
+    color: #d9534f;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2vh;
+}
+
+/* Medienabfragen für kleinere Bildschirme */
+@media (max-width: 1024px) {
+    .response-wrapper {
+        font-size: 2vh;
+        padding: 3vh;
+    }
+    .response-box {
+        font-size: 2vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .response-wrapper {
+        font-size: 1.8vh;
+        padding: 2vh;
+    }
+    .response-box {
+        font-size: 1.8vh;
+    }
+}
+
+@media (max-width: 320px) {
+    .response-wrapper {
+        font-size: 1.6vh;
+    }
+    .response-box {
+        font-size: 1.6vh;
+    }
+}
+
+
+/* Fortschrittsbalken */
+.progress-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 2vh auto;
+    text-align: center;
+}
+
+progress {
+    width: 100%;
+    height: 2vh;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 1vh;
+    background-color: #ecf0f1;
+    border: none;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #ecf0f1;
+    border-radius: 1vh;
+}
+
+progress::-webkit-progress-value {
+    background-color: #3498db;
+    border-radius: 1vh;
+}
+
+progress::-moz-progress-bar {
+    background-color: #3498db;
+    border-radius: 1vh;
+}
+
+#progressTextContainer {
+    margin-top: 1vh;
+    display: flex;
+    justify-content: center;
+}
+
+#progressText {
+    font-size: 2vh;
+    color: #030303;
+}
+
+/* Footer */
+footer {
+    padding: 4vh 0;
+    text-align: center;
+    margin-top: 6vh;
+}
+
+footer .footer-container p {
+    margin: 0;
+    font-size: 2vh;
+    color: #333;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 2vh;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 2vh;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #60b22c;
+    font-size: 2vh;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Medienabfragen für kleinere Bildschirme */
+@media (max-width: 1024px) {
+    body {
+        font-size: 2.5vh;
+    }
+
+    header h1 {
+        font-size: 4vh;
+    }
+
+    footer .footer-container p {
+        font-size: 2.2vh;
+    }
+
+    footer nav ul li a {
+        font-size: 2.2vh;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 2vh;
+    }
+
+    footer .footer-container p {
+        font-size: 2vh;
+    }
+
+    footer nav ul li a {
+        font-size: 2vh;
+    }
+}
+
+@media (max-width: 320px) {
+    footer .footer-container p {
+        font-size: 1.8vh;
+    }
+
+    footer nav ul li a {
+        font-size: 1.8vh;
+    }
+}
+
+/* Sidebar-Stile */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -49.8%;
+    width: 50%;
+    height: 100vh;
+    background-color: #333;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    transition:all 200ms ease;
+}
+.sidebar:hover {
+    left:0;
+}
+
+/* Sidebar geöffnet */
+.sidebar[open] {
+    left: 0;
+}
+
+/* Hamburger-Button */
+.sidebar-toggle {
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    width: 50px;
+    height: 30px;
+    background-color: #444;
+    cursor: pointer;
+    border-radius: 5px;
+    transform: translateY(-50%);
+}
+
+.sidebar-toggle::before,
+.sidebar-toggle::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    left: 0;
+}
+
+.sidebar-toggle::before {
+    top: 7px;
+}
+
+.sidebar-toggle::after {
+    bottom: 7px;
+}
+
+/* Sidebar-Inhalte */
+.sidebar details {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.sidebar details summary {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    font-size: 2vh;
+    color: white;
+    padding: 1vh;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar details summary:hover {
+    background-color: #444;
+}

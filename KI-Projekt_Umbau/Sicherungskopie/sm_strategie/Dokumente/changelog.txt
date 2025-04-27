@@ -1,0 +1,34 @@
+/////// Tag 1 ///////
+
+Datum 11.10.24
+
+1. Plan wurde aufgestellt um die Umsetzung des KI Prompt tools umzusetzen
+2. Ordnerstruktur wurde geplant und umgesetzt
+3. Beispieldateien wurden angelegt
+4. Html-Gerüst wurde angelegt für die Frageseite
+5. Strukturvorbereitung für die Fragen mit antworten wurden vorbereitet und eingebettet
+   => Dazu wurde mit Radiobuttons und Checkboxen gearbeitet
+6. Kleine implementierungshilfe mit einem kurz css zur visualisierung wurde eingebaut in die frageseite.Html
+7. Blätterfunktion wurde mittels JS und Klassenfestlegung der Fragen eingebaut. 
+      x  => Endfrage Überlegung ob absenden statt Nächste butten
+      x  => Vernünftige einbettung muss noch vorgenommen werden 
+        => Fragen müssen in die sql datenbank noch integriert werden 
+        => Antworten/ Fragen sollen am ende als xlsx format abgelegt werden
+        
+
+Datum 14.10.24
+
+1.CSS wurde entwickelt um die Fragedarstellung optisch angenehmer zu gestalten
+   -> Dadurch wurde die Class - Container in die Frageseite.html eingebaut
+   -> Die Antwortmöglichkeiten wurden linksbündig angepasst, mittels display flex/ align-items: center und margin-right
+
+2. Es wurde eine JS anpassung vorgenommen auf der frageseite.html die bei der andfrage dafür sorgt, dass der Button sich von Nächste auf Absenden ändert
+3.Vorbereitung auf die Einbindung der KI:
+
+
+
+
+
+
+
+   -> Auf der Fragseite.html, wird die Class Navigation angepasst

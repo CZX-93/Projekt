@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questions>
+    <question id="goals">
+        <id>goals</id>
+        <text>Unternehmensziele (Mehrfachauswahl)</text>
+        <type>checkbox</type>
+        <options>
+            <option value="brand_awareness">Markenbekanntheit steigern</option>
+            <option value="sales">Verkäufe fördern</option>
+            <option value="customer_loyalty">Kundenbindung erhöhen</option>
+            <option value="lead_generation">Lead-Generierung verbessern</option>
+            <option value="customer_service">Kundenservice verbessern</option>
+        </options>
+    </question>
+    <question id="target_audience">
+        <id>target_audience</id>
+        <text>Zielgruppe (Einfachauswahl)</text>
+        <type>radio</type>
+        <options>
+            <option value="teens">Jugendliche (13-17 Jahre)</option>
+            <option value="young_adults">Junge Erwachsene (18-24 Jahre)</option>
+            <option value="adults">Erwachsene (25-34 Jahre)</option>
+            <option value="middle_aged">Mittleres Alter (35-54 Jahre)</option>
+            <option value="older_adults">Ältere Erwachsene (55+ Jahre)</option>
+        </options>
+    </question>
+    <question id="industry_competition">
+        <id>industry_competition</id>
+        <text>Branche und Wettbewerb (Einfachauswahl)</text>
+        <type>radio</type>
+        <options>
+            <option value="high">Sehr wettbewerbsintensiv</option>
+            <option value="moderate">Mäßig wettbewerbsintensiv</option>
+            <option value="low">Wenig wettbewerbsintensiv</option>
+        </options>
+    </question>
+    <question id="previous_activities">
+        <id>previous_activities</id>
+        <text>Bisherige Aktivitäten (Mehrfachauswahl)</text>
+        <type>checkbox</type>
+        <options>
+            <option value="facebook">Facebook</option>
+            <option value="instagram">Instagram</option>
+            <option value="twitter">Twitter</option>
+            <option value="linkedin">LinkedIn</option>
+            <option value="tiktok">TikTok</option>
+            <option value="youtube">YouTube</option>
+        </options>
+    </question>
+    <question id="content_preferences">
+        <id>content_preferences</id>
+        <text>Content-Vorlieben (Mehrfachauswahl)</text>
+        <type>checkbox</type>
+        <options>
+            <option value="videos">Videos</option>
+            <option value="text_contribution">Textbeitrag</option>
+            <option value="images">Bilder</option>
+            <option value="tutorials">Tutorials</option>
+            <option value="infographics">Infografiken</option>
+            <option value="podcasts">Podcasts</option>
+        </options>
+    </question>
+    <question id="resources">
+        <id>resources</id>
+        <text>Ressourcen (Einfachauswahl)</text>
+        <type>radio</type>
+        <options>
+            <option value="under_500">Unter 500 € pro Monat</option>
+            <option value="500_1000">500 € bis 1.000 € pro Monat</option>
+            <option value="1000_5000">1.000 € bis 5.000 € pro Monat</option>
+            <option value="over_5000">Über 5.000 € pro Monat</option>
+        </options>
+    </question>
+    <question id="time_commitment">
+        <id>time_commitment</id>
+        <text>Zeitlicher eigener Einsatz pro Woche (Einfachauswahl)</text>
+        <type>radio</type>
+        <options>
+            <option value="less_5">Weniger als 5 Stunden</option>
+            <option value="5_10">5 bis 10 Stunden</option>
+            <option value="10_20">10 bis 20 Stunden</option>
+            <option value="over_20">Mehr als 20 Stunden</option>
+        </options>
+    </question>
+    <question id="customer_interaction">
+        <id>customer_interaction</id>
+        <text>Kundeninteraktion (Einfachauswahl)</text>
+        <type>radio</type>
+        <options>
+            <option value="very_active">Sehr aktiv</option>
+            <option value="moderate_active">Moderat aktiv</option>
+            <option value="less_active">Wenig aktiv</option>
+            <option value="none">Nicht vorhanden</option>
+        </options>
+    </question>
+    <question id="sales_channels">
+        <id>sales_channels</id>
+        <text>Vertriebswege (Einfachauswahl)</text>
+        <type>radio</type>
+        <options>
+            <option value="direct_sales">Direkter Verkauf</option>
+            <option value="lead_generation">Lead-Generierung</option>
+            <option value="both">Beides</option>
+            <option value="none">Keines von beidem</option>
+        </options>
+    </question>
+    <question id="customer_feedback">
+        <id>customer_feedback</id>
+        <text>Kundenfeedback (Mehrfachauswahl)</text>
+        <type>checkbox</type>
+        <options>
+            <option value="direct_social_media">Direktes Feedback über Social Media</option>
+            <option value="surveys">Umfragen</option>
+            <option value="review_platforms">Bewertungsplattformen</option>
+            <option value="personal_feedback">Persönliches Feedback</option>
+            <option value="no_systematic">Keine systematische Erfassung</option>
+        </options>
+    </question>
+    <question id="brand_consistency">
+        <id>brand_consistency</id>
+        <text>Markenkonsistenz (Einfachauswahl)</text>
+        <type>radio</type>
+        <options>
+            <option value="very_important">Sehr wichtig</option>
+            <option value="important">Wichtig</option>
+            <option value="less_important">Weniger wichtig</option>
+            <option value="unimportant">Unwichtig</option>
+        </options>
+    </question>
+    <question id="tone">
+        <id>tone</id>
+        <text>Sprache und Ton (Einfachauswahl)</text>
+        <type>radio</type>
+        <options>
+            <option value="formal">Formal</option>
+            <option value="informal">Informell</option>
+            <option value="humorous">Humorvoll</option>
+            <option value="serious">Ernst</option>
+            <option value="inspiring">Inspirierend</option>
+        </options>
+    </question>
+    <question id="influencer_involvement">
+        <id>influencer_involvement</id>
+        <text>Einbindung von Influencern (Einfachauswahl)</text>
+        <type>radio</type>
+        <options>
+            <option value="regular">Ja, regelmäßig</option>
+            <option value="occasional">Gelegentlich</option>
+            <option value="planned">Nein, aber geplant</option>
+            <option value="not_planned">Nein, nicht geplant</option>
+        </options>
+    </question>
+    <question id="campaigns">
+        <id>campaigns</id>
+        <text>Werbeaktionen und Kampagnen (Mehrfachauswahl)</text>
+        <type>checkbox</type>
+        <options>
+            <option value="discounts">Rabatte und Sonderangebote</option>
+            <option value="contests">Gewinnspiele</option>
+            <option value="product_demos">Produktdemonstrationen</option>
+            <option value="partnerships">Partnerschaften</option>
+            <option value="none">Keine</option>
+        </options>
+    </question>
+    <question id="seasonality">
+        <id>seasonality</id>
+        <text>Saisonabhängigkeit (Einfachauswahl)</text>
+        <type>radio</type>
+        <options>
+            <option value="very_strong">Ja, sehr stark</option>
+            <option value="manageable">Ja, aber überschaubar</option>
+            <option value="none">Nein</option>
+        </options>
+    </question>
+    <question id="target_audience_business">
+        <id>target_audience_business</id>
+        <text>Zielgruppe/Kunden (Einfachauswahl)</text>
+        <type>radio</type>
+        <options>
+            <option value="b2c_only">B2C ausschließlich</option>
+            <option value="b2b_only">B2B auschließlich</option>
+            <option value="b2b_and_b2c">B2B/B2C teilweise</option>
+        </options>
+    </question>
+    <question id="future_vision">
+        <id>future_vision</id>
+        <text>Zukunftsvision (Einfachauswahl)</text>
+        <type>radio</type>
+        <options>
+            <option value="expansion">Starke Expansion auf neuen Plattformen</option>
+            <option value="deepening_presence">Vertiefung der bestehenden Präsenz</option>
+            <option value="experimenting_formats">Experimentieren mit neuen Formaten</option>
+            <option value="stabilization">Stabilisierung der aktuellen Situation</option>
+        </options>
+    </question>
+</questions>

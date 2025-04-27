@@ -1,0 +1,346 @@
+/* --- Style.css --- */
+
+/* Schriftart einbinden */
+@font-face {
+    font-family: 'montserrat';
+    src: url('fonts/montserrat-Regular.otf') format('opentype');
+}
+
+/* Allgemeine Stile */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bold', Arial, sans-serif;
+    font-size: 3vh;
+    background: linear-gradient(135deg, #162d6c, #080e4a);
+    color: white;
+    line-height: 1.6;
+    padding: 2vh;
+}
+
+/* Header */
+header {
+    text-align: left;
+    padding: 4vh;
+    border-radius: 1vh;
+    margin-bottom: 8vh;
+    width: 84%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header .logo img {
+    max-width: 150px; /* Breite des Logos */
+    height: auto;     /* Automatische Höhe, um das Seitenverhältnis zu wahren */
+    filter:brightness(1.6)
+}
+
+
+header h1 {
+    margin: 2vh 0;
+    font-size: 5vh;
+    color: #fff;
+}
+
+header .highlight {
+    color: #60b22c;
+}
+
+header p {
+    font-size: 2vh;
+    color: #ecf0f1;
+}
+
+/* Hauptinhalt */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vh;
+}
+
+/* Einleitungsbereich */
+#introSection {
+    background-color: #ffffff;
+    color: #333;
+    padding: 6vh;
+    border-radius: 2vh;
+    width: 90%;
+    max-width: 70%;
+    box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#introSection .intro-text {
+    font-size: 2.5vh;
+    line-height: 1.8;
+    margin-bottom: 4vh;
+}
+
+#introSection button {
+    padding: 1.5vh 3vh;
+    background-color: #60b22c;
+    color: #ffffff;
+    border: none;
+    border-radius: 1vh;
+    font-size: 2.5vh;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#introSection button:hover {
+    background-color: #4e8e22;
+}
+
+#introSection button:focus {
+    outline: none;
+    box-shadow: 0 0 1vh #4e8e22;
+}
+
+/* Fragenbereich */
+.question-wrapper {
+    background-color: #fff;
+    color: #333;
+    padding: 8vh;
+    border-radius: 2vh;
+    width: 90%;
+    max-width: 80%;
+    box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: center;
+    position: relative;
+}
+
+/* Frage und Antwortmöglichkeiten */
+.question-container {
+    width: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    display: none;
+}
+
+.question-container:first-of-type {
+    display: flex; /* Erste Frage sichtbar */
+}
+
+.question-container.active {
+    display: block; /* Nur die aktive Frage sichtbar */
+}
+
+.question-container p {
+    font-size: 3vh; /* Schriftgröße */
+    font-weight: bold; /* Schriftstärke */
+    color: #333; /* Schriftfarbe */
+    margin-bottom: 7vh;
+    margin-top: 3vh;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.question-container label {
+    font-size: 2vh; /* Schriftgröße */
+    font-weight: bold; /* Schriftstärke */
+    color: #333; /* Schriftfarbe */
+    margin-bottom: 1vh;
+}
+.question {
+    display:flex;
+    flex-direction: column!important;
+    gap: 3px;
+}
+.options {
+    width: 100%;
+    padding-left: 2vh;
+}
+
+/* Antwortmöglichkeiten */
+.options label {
+    font-size: 2vh; /* Schriftgröße */
+    font-weight: normal; /* Schriftstärke */
+    color: #333; /* Schriftfarbe */
+    cursor: pointer;
+    margin-bottom: 1vh;
+}
+
+.options input[type="checkbox"] {
+    margin-right: 2vh;
+}
+
+/* Navigationsbuttons */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3vh;
+    gap: 2vh;
+}
+
+button {
+    padding: 2vh 3vh;
+    border: 60b22c;
+    border-radius: 1vh;
+    cursor: pointer;
+    font-size: 3vh;
+    font-weight: bold;
+    background-color: #60b22c;
+    color: #ecf0f1;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+button#prevButton {
+    background-color: #60b22c;
+    color: #ffffff;
+}
+
+button#nextButton {
+    background-color: #60b22c;
+    color: #ffffff;
+}
+
+button:disabled {
+    background-color: #60b22c;
+    cursor: not-allowed;
+}
+
+/* Antwortbereich */
+.response-wrapper {
+    background-color: #fff;
+    padding: 4vh;
+    border-radius: 2vh;
+    width: 90%;
+    max-width: 80%;
+    box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 4vh;
+    border: 1px solid #ccc;
+    border-radius: 1vh;
+    padding: 2vh;
+    font-size: 2vh;
+    resize: none;
+}
+
+textarea#response {
+    background-color: #eef1f5;
+}
+
+/* Fortschrittsbalken */
+.progress-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 2vh auto;
+    text-align: center;
+}
+
+progress {
+    width: 100%;
+    height: 2vh;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 1vh;
+    background-color: #ecf0f1;
+    border: none;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #ecf0f1;
+    border-radius: 1vh;
+}
+
+progress::-webkit-progress-value {
+    background-color: #3498db;
+    border-radius: 1vh;
+}
+
+progress::-moz-progress-bar {
+    background-color: #3498db;
+    border-radius: 1vh;
+}
+
+#progressTextContainer {
+    margin-top: 1vh;
+    display: flex;
+    justify-content: center;
+}
+
+#progressText {
+    font-size: 2vh;
+    color: #030303;
+}
+
+/* Footer */
+footer {
+    background-color: #f1f1f1;
+    padding: 4vh 0;
+    text-align: center;
+    margin-top: 6vh;
+}
+
+footer .footer-container p {
+    margin: 0;
+    font-size: 2vh;
+    color: #333;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 2vh;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 2vh;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #60b22c;
+    font-size: 2vh;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    footer .footer-container p {
+        font-size: 2.5vh;
+    }
+
+    footer nav ul li a {
+        font-size: 2.2vh;
+    }
+}
+
+@media (max-width: 600px) {
+    footer .footer-container p {
+        font-size: 2vh;
+    }
+
+    footer nav ul li a {
+        font-size: 2vh;
+    }
+}
+
+@media (max-width: 320px) {
+    footer .footer-container p {
+        font-size: 1.8vh;
+    }
+
+    footer nav ul li a {
+        font-size: 1.8vh;
+    }
+}

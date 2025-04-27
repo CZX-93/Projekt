@@ -1,0 +1,57 @@
+[
+    {
+        "sender": "test1",
+        "recipient": "test2",
+        "subject": "test",
+        "message": "testetstetststetstetst",
+        "timestamp": "2025-03-20 11:15:09",
+        "read": false,
+        "archived": false,
+        "favorite": false,
+        "attachment": null
+    },
+    {
+        "sender": "test1",
+        "recipient": "test2",
+        "subject": "hi",
+        "message": "hi",
+        "timestamp": "2025-03-20 11:42:18",
+        "read": false,
+        "archived": false,
+        "favorite": false,
+        "attachment": null
+    },
+    {
+        "sender": "test1",
+        "recipient": "test1",
+        "subject": "f",
+        "message": "hi",
+        "timestamp": "2025-03-20 12:05:55",
+        "read": false,
+        "archived": false,
+        "favorite": false,
+        "attachment": null
+    },
+    {
+        "sender": "test1",
+        "recipient": "test1",
+        "subject": "e",
+        "message": "hi",
+        "timestamp": "2025-03-20 12:07:42",
+        "read": false,
+        "archived": false,
+        "favorite": false,
+        "attachment": null
+    },
+    {
+        "sender": "test1",
+        "recipient": "test2",
+        "subject": "d",
+        "message": "d",
+        "timestamp": "2025-03-20 12:07:56",
+        "read": false,
+        "archived": false,
+        "favorite": false,
+        "attachment": null
+    }
+]
