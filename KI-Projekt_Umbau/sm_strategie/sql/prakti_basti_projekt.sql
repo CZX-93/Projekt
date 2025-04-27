@@ -137,7 +137,7 @@ CREATE TABLE `api_key` (
 --
 
 INSERT INTO `api_key` (`id`, `key`, `erstellt_am`, `erstellt_von`, `letzte_Aenderung_am`, `letzte_Aenderung_von`) VALUES
-(1, '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\r\n', '2025-01-17 15:32:02', NULL, '2025-02-20 07:53:17', NULL);
+(1, '++++', '2025-01-17 15:32:02', NULL, '2025-02-20 07:53:17', NULL);
 
 -- --------------------------------------------------------
 
@@ -155,7 +155,7 @@ CREATE TABLE `assistant_key` (
 --
 
 INSERT INTO `assistant_key` (`id`, `key_value`) VALUES
-(4, 'asst_FP0ZqPIx0Q2pdbQUEHLCo8Ap');
+(4, '++++');
 
 -- --------------------------------------------------------
 

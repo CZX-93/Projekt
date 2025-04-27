@@ -183,8 +183,8 @@ function getAIResponseFromOpenAI($apiKey, $assistantKey, $userInput) {
 $userInput = "Erzählen Sie mir mehr über die OpenAI GPT-Modelle.";
 
 // Die OpenAI API- und Assistant-Keys, die du für die Anfrage verwendest
-$apiKey = "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";  // Dein OpenAI API-Key
-$assistantKey = "asst_FP0ZqPIx0Q2pdbQUEHLCo8Ap";  // Dein Assistant Key (falls erforderlich)
+$apiKey = "**";  // Dein OpenAI API-Key
+$assistantKey = "**";  // Dein Assistant Key (falls erforderlich)
 
 // KI-Antwort abrufen
 $result = getAIResponseFromOpenAI($apiKey, $assistantKey, $userInput);
